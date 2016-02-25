@@ -64,8 +64,7 @@ class Composition:
     def joined(self):
         comp = self.calculate_kmer()
         gc = self.gc_content()
-        joined = p.merge(comp, gc, how='outer')
-        print joined
+        
         
 #out = open("composition.csv", "w")
 in_seq = open("Conjunto_zamora.fasta" , "r")
