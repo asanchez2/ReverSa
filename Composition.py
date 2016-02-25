@@ -9,7 +9,7 @@ import pandas as p
 
 class Composition:
     def __init__(self, fasta_file, kmer_len = 4, space = 2):
-        self.fasta = fasta_file# Esto debe ser una lista , no un str
+        self.fasta = fasta_file
         self.kmer_len = kmer_len
         self.space = space
         
