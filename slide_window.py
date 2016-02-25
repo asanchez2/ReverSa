@@ -7,7 +7,7 @@ def window_generator(seq, win_length, win_step):
 
 #Open and write fasta files
 out = open("seq_windows.fasta", "w")
-for fasta in SeqIO.parse("Control1.fasta", "fasta"):
+for fasta in SeqIO.parse("Conjunto_zamora.fasta", "fasta"):
 	sequence , name = str(fasta.seq), fasta.id
 	for subseq in window_generator(sequence, 240, 25):
 		out.write(">" + name + subseq + "\n")
